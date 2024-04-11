@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="section">
+    <h2>Active Requests</h2>
+    <div class="active-requests">
+      <div *ngFor="let request of activeRequests" [ngClass]="{'urgent': isUrgent(request)}">
+        <p>Description: {{ request.referralDescription }}</p>
+        <p>Entry Time: {{ formatDate(request.entryTime) }}</p>
+        <p>Deadline: {{ formatDate(request.deadline) }}</p>
+        <button class="rounded" (click)="markAsResolved(request)">Mark as Completed</button>
+      </div>
+    </div>
+  </div>
+</div>

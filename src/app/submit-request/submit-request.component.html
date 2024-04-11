@@ -1,0 +1,14 @@
+<div class="section">
+  <h2>Submit Request</h2>
+  <form (submit)="submitRequest()">
+    <div class="input-group">
+      <label for="referralDescription">Referral Description:</label>
+      <input type="text" id="referralDescription" name="referralDescription" [(ngModel)]="referralDescription" required>
+    </div>
+    <div class="input-group">
+      <label for="deadline">Deadline:</label>
+      <input type="datetime-local" id="deadline" name="deadline" [(ngModel)]="deadline" required>
+    </div>
+    <button class="rounded" type="submit">Submit Request</button>
+  </form>
+</div>

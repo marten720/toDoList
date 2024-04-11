@@ -1,27 +1,67 @@
-# ToDoProject
+# Request Management System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+Welcome to the Request Management System project! This web application allows users to manage and track requests by submitting new requests and viewing active ones.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Submit Request: Users can submit new requests by providing a description and deadline.
+- View Active Requests: Users can view a list of active requests sorted by deadline. Requests with less than an hour remaining or past the deadline are highlighted in red.
+- Mark as Completed: Users can mark a request as completed, removing it from the active requests list.
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Follow these instructions to get the project up and running on your local machine.
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js and npm installed on your machine
+- Angular CLI installed globally `(npm install -g @angular/cli)`
 
-## Running unit tests
+### Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository to your local machine:
 
-## Running end-to-end tests
+   `git clone https://github.com/marten720/toDoList.git`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Navigate to the project directory:
 
-## Further help
+   `cd request-management-system`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Install dependencies:
+
+   `npm install`
+
+### Usage
+
+1. Start the development server:
+
+   `ng serve`
+
+2. Open your web browser and go to http://localhost:4200 to view the application.
+
+### Deployment
+
+To deploy the application for production, run the following command:
+
+`ng build --prod`
+
+This command will generate a production-ready build in the dist/ directory, which can be deployed to a web server.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+
+Fork the repository.
+Create a new branch for your feature or fix: git checkout -b feature-name.
+Make your changes and commit them: git commit -m 'Add new feature'.
+Push to the branch: `git push origin feature-name.`
+Submit a pull request detailing your changes.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgements
+
+This project was created as part of a test job.
+Special thanks to Angular for providing the framework.
